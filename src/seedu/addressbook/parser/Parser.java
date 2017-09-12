@@ -134,6 +134,9 @@ public class Parser {
                     matcher.group("address"),
                     isPrivatePrefixPresent(matcher.group("isAddressPrivate")),
 
+                    matcher.group("birthday"),
+                    isPrivatePrefixPresent(matcher.group("isBirthdayPrivate")),
+
                     getTagsFromArgs(matcher.group("tagArguments"))
             );
         } catch (IllegalValueException ive) {
